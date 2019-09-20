@@ -1,14 +1,14 @@
-let repeatNumbers = function(data){
+let repeatNumbers = function(data) {
   let resultArr = [];
-for (let i = 0; i < data.length; i++){
-  let result = "";
-  for (let b = 0; b < data[i][1]; b++){
-    result += data[i][0];
+  for (let i = 0; i < data.length; i++) {
+    let result = "";
+    for (let b = 0; b < data[i][1]; b++) {
+      result += data[i][0];
+    }
+    resultArr.push(result);
   }
-resultArr.push(result)  
-}
-return resultArr.join(", ")
-}
+  return resultArr.join(", ");
+};
 
 console.log(repeatNumbers([[1, 10]]));
 console.log(repeatNumbers([[1, 2], [2, 3]]));
